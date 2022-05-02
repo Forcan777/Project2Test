@@ -1,0 +1,26 @@
+#signUpButton{
+    margin-left:10px;
+}
+
+.SignUp {
+   
+    display: inline-flexbox;
+    margin-left: 33%;
+ }
+ 
+ .container{
+ 
+     margin-top: 12%;    
+  
+ }
+ .buttonClass {
+     margin-left: 3px;
+ }
+
+ .mat-raised-button {
+    color: rgb(255,215,64) !important;
+  }
+
+  .error {
+      color: red;
+  }

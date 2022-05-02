@@ -1,0 +1,50 @@
+
+#appAdd {
+        float:right;
+}
+
+.InfoCards {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.PastPlans {
+    background-color: darkgrey;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.Panels {
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+}
+
+.mat-action-row {
+    position: absolute;
+    right: 0;
+}
+
+app-deletebutton {
+    margin-right: 35px;
+}
+
+.mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+button {
+    margin-left: 10px;
+
+}
+body {
+    background-color: lightgrey;
+}
+
+h1 {
+   margin-right: 5%;
+}

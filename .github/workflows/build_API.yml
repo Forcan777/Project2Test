@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
@@ -41,7 +41,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN2 }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"Project2Test_API" /o:"forcan777" /d:sonar.login="${{ secrets.SONAR_TOKEN2 }}" /d:sonar.host.url="https://sonarcloud.io"
+          dotnet-sonarscanner begin /k:"Project2Test_API" /o:"forcan777" /d:sonar.login="${{ secrets.SONAR_TOKEN2 }}" /d:sonar.host.url="https://sonarcloud.io"
           cd API
-          dotnet build
-          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN2 }}"
+          dotnet build --no-incremental
+          dotnet-coverage collect 'dotnet test' -f xml -o 'coverage.xml'
+          dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN2 }}"

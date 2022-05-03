@@ -45,9 +45,7 @@ jobs:
             /d:sonar.cs.opencover.reportsPaths=coverage.xml
           cd API
           dotnet build --no-incremental
-          coverlet .\EventIt\bin\Debug\net5.0\EventIt.dll
-            --target "dotnet"
-            --targetargs "test --no-build"
+          coverlet .\EventIt\bin\Debug\net5.0\EventIt.dll --target "dotnet" --targetargs "test --no-build"
             -f=opencover
             -o="coverage.xml"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN2 }}"

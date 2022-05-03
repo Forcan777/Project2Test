@@ -352,3 +352,5 @@ MigrationBackup/
 # Angluar related gitignore
 node_modules
 /.angular/cache/
+coverage/html-report
+coverage/lcov-report/lcov-report

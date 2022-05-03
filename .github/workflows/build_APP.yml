@@ -34,8 +34,7 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Test and coverage
-        with:
-          projectBaseDir: ./APP
+        projectBaseDir: ./APP
         run: yarn jest --coverage
       
       

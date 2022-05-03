@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1Jf5zRoYaqaw68hRt5wpyPgEn35HgQNxKYeMm6B6A0xnSxXEnqMQdhTGJgkSir1uYhTB0cdrxzOhAke7YvTUyg==",
+  "dgSpecHash": "mjpP5lllc9w2PLwS3I8w/FBqzRzSDk5W+3QIwWtDJVXz3wHjCUc7huGcS/0teULUk86aPFdvM5w5C1kDwypvIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Main\\EventIt\\API\\EventIt\\EventIt.csproj",
+  "projectFilePath": "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Testing\\SonarCloud\\Project2Test\\API\\EventIt\\EventIt.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\forca\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\forca\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\forca\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\forca\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

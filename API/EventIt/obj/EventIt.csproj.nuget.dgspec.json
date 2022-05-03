@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Main\\EventIt\\API\\EventIt\\EventIt.csproj": {}
+    "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Testing\\SonarCloud\\Project2Test\\API\\EventIt\\EventIt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Main\\EventIt\\API\\EventIt\\EventIt.csproj": {
+    "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Testing\\SonarCloud\\Project2Test\\API\\EventIt\\EventIt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Main\\EventIt\\API\\EventIt\\EventIt.csproj",
+        "projectUniqueName": "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Testing\\SonarCloud\\Project2Test\\API\\EventIt\\EventIt.csproj",
         "projectName": "EventIt",
-        "projectPath": "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Main\\EventIt\\API\\EventIt\\EventIt.csproj",
+        "projectPath": "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Testing\\SonarCloud\\Project2Test\\API\\EventIt\\EventIt.csproj",
         "packagesPath": "C:\\Users\\forca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Main\\EventIt\\API\\EventIt\\obj\\",
+        "outputPath": "C:\\Users\\forca\\Desktop\\Training_Sessions\\Projects\\2\\Testing\\SonarCloud\\Project2Test\\API\\EventIt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -83,6 +83,12 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
             }
           },
           "imports": [

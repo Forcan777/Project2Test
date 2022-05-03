@@ -25,13 +25,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-        - name: Install dependencies
-          run: yarn
-            working-directory: ./APP
-        - name: Test and coverage
-          run: yarn jest --coverage
-            working-directory: ./APP
-
+      # empty
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis

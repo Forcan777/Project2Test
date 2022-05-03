@@ -42,17 +42,9 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN2 }}
         shell: powershell
         run: |
-          SonarScanner.MSBuild.exe begin /k:"Project2Test_API" /o:"forcan777" /d:sonar.login="${{ secrets.SONAR_TOKEN2 }}" /d:sonar.host.url="https://sonarcloud.io"
-            cd API
-            dotnet build --no-incremental
-            dotnet test --collect "Code Coverage"
-          SonarScanner.MSBuild.exe end /d:sonar.login="<sonar-token>"
-
-      # .\.sonar\scanner\dotnet-sonarscanner begin /k:"Project2Test_API" /o:"forcan777" /d:sonar.login="${{ secrets.SONAR_TOKEN2 }}" /d:sonar.host.url="https://sonarcloud.io"
-      #   /d:sonar.cs.opencover.reportsPaths=**/coverage.xml
-      # cd API
-      # dotnet build --no-incremental
-      # coverlet .\EventIt\bin\Debug\net5.0\EventIt.dll --target "dotnet" --targetargs "test --no-build"
-      #   -f=opencover
-      #   -o="coverage.xml"
-      # .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN2 }}"
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"Project2Test_API" /o:"forcan777" /d:sonar.login="${{ secrets.SONAR_TOKEN2 }}" /d:sonar.host.url="https://sonarcloud.io"
+          /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
+          cd API
+          dotnet build --no-incremental
+          dotnet-coverage collect 'dotnet test' -f xml -o 'coverage.xml'
+          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN2 }}"

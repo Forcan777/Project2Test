@@ -1,3 +1,4 @@
+name: SonarCloud - API
 on:
   push:
     branches:
@@ -42,7 +43,7 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"Project2Test_API" /o:"forcan777" /d:sonar.login="${{ secrets.SONAR_TOKEN2 }}" /d:sonar.host.url="https://sonarcloud.io"
-            /d:sonar.cs.opencover.reportsPaths=coverage.xml
+            /d:sonar.cs.opencover.reportsPaths=**/coverage.xml
           cd API
           dotnet build --no-incremental
           coverlet .\EventIt\bin\Debug\net5.0\EventIt.dll --target "dotnet" --targetargs "test --no-build"
